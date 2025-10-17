@@ -2,21 +2,21 @@
   "songs": [
     {
       "id": 1,
-      "name": "Cục Cưng",
+      "name": "Baby",
       "singer": "Justin Bieber",
       "path": "stuff/audio/baby.mp3",
       "image": "stuff/img/baby.jpg"
     },
     {
       "id": 2,
-      "name": "Con Đường Xưa",
+      "name": "Old Town Road",
       "singer": "Lil Nas X",
       "path": "stuff/audio/old.mp3",
       "image": "stuff/img/old.jpg"
     },
     {
       "id": 3,
-      "name": "Cô đơn",
+      "name": "Lonely",
       "singer": "Akon",
           "path": "stuff/audio/lonely.mp3",
       "image": "stuff/img/lonely.jpg"

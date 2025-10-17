@@ -64,6 +64,7 @@ var render = function (data) {
 
 //handleEvents
 var handleEvents = function (data) {
+
   //handle cd
   const cdWidth = cd.offsetWidth;
   document.onscroll = function () {
@@ -72,6 +73,7 @@ var handleEvents = function (data) {
     cd.style.width = newCdWidth > 0 ? newCdWidth + "px" : 0;
     cd.style.opacity = newCdWidth / cdWidth;
   };
+
 
   //handle play
   btnPlay.onclick = function () {
@@ -82,17 +84,20 @@ var handleEvents = function (data) {
     }
   };
 
+
   //onplay
   audio.onplay = function () {
     isPlaying = true;
     player.classList.add("playing");
   };
 
+
   //onpause
   audio.onpause = function () {
     isPlaying = false;
     player.classList.remove("playing");
   };
+
 
   //change timeline
   audio.ontimeupdate = function () {
@@ -104,11 +109,13 @@ var handleEvents = function (data) {
     }
   };
 
+
   //seekTime
   progress.oninput = function () {
     const seekTime = (audio.duration / 100) * progress.value;
     audio.currentTime = seekTime;
   };
+
 
   //next song
   btnNext.onclick = function () {
@@ -128,6 +135,7 @@ var handleEvents = function (data) {
     }
   };
 
+
   //prev song
   btnPrev.onclick = function () {
     if (isRandom) {
@@ -146,16 +154,19 @@ var handleEvents = function (data) {
     }
   };
 
+
   //reload song
   btnReload.onclick = function () {
     audio.currentTime = 0;
   };
+
 
   //active random btn
   btnRandom.onclick = function () {
     isRandom = !isRandom;
     btnRandom.classList.toggle("active", isRandom);
   };
+
 
   //move to next song when ended
   audio.onended = function () {
@@ -175,6 +186,7 @@ var handleEvents = function (data) {
     }
   };
 
+
   //click playlist
   playlist.onclick = function (e) {
     const songNode = e.target.closest(".song:not(.active)");
@@ -187,10 +199,12 @@ var handleEvents = function (data) {
   };
 };
 
+
 //get currentSong
 var getCurrentSong = function (data) {
   return data[currentIndex];
 };
+
 
 //load current song
 var loadCurrentSong = function (data) {
@@ -200,6 +214,7 @@ var loadCurrentSong = function (data) {
   audio.src = currentSong.path;
   // console.log(heading, cdThumb, audio);
 };
+
 
 //play random song
 var playRandom = function (data) {

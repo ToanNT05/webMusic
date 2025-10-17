@@ -38,9 +38,17 @@
 
 body {
   /* Layer 1: soft corner glows */
-  background: radial-gradient(900px 500px at -10% -10%, var(--bg-accent-1), transparent 60%),
+  background: radial-gradient(
+      900px 500px at -10% -10%,
+      var(--bg-accent-1),
+      transparent 60%
+    ),
     radial-gradient(800px 460px at 110% 0%, var(--bg-accent-2), transparent 60%),
-    radial-gradient(900px 520px at 50% 120%, var(--bg-accent-3), transparent 60%),
+    radial-gradient(
+      900px 520px at 50% 120%,
+      var(--bg-accent-3),
+      transparent 60%
+    ),
     var(--bg-base);
   color: var(--text-color);
   min-height: 100vh;
@@ -55,7 +63,13 @@ body::before {
   position: fixed;
   inset: -20% -10% auto -10%;
   height: 70vh;
-  background: conic-gradient(from 0deg at 50% 50%, rgba(29, 185, 84, 0.18), rgba(59, 130, 246, 0.16), rgba(16, 185, 129, 0.18), rgba(29, 185, 84, 0.18));
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    rgba(29, 185, 84, 0.18),
+    rgba(59, 130, 246, 0.16),
+    rgba(16, 185, 129, 0.18),
+    rgba(29, 185, 84, 0.18)
+  );
   filter: blur(60px) saturate(120%);
   opacity: 0.65;
   animation: floatBlob 22s ease-in-out infinite alternate;
@@ -68,8 +82,10 @@ body::after {
   content: "";
   position: fixed;
   inset: 0;
-  background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px
+    ),
     linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
   background-size: 24px 24px, 24px 24px;
   mix-blend-mode: overlay;
@@ -115,7 +131,11 @@ html {
 
 .dashboard {
   padding: 20px 24px 16px;
-  background: linear-gradient(180deg, rgba(36, 36, 36, 0.9), rgba(24, 24, 24, 0.9));
+  background: linear-gradient(
+    180deg,
+    rgba(36, 36, 36, 0.9),
+    rgba(24, 24, 24, 0.9)
+  );
   backdrop-filter: blur(8px);
   position: fixed;
   top: 0;
@@ -162,7 +182,9 @@ header h2 {
   background-size: cover;
   background-position: center;
   margin: auto;
-  box-shadow: 0 20px 40px var(--shadow-color), inset 0 0 0 6px rgba(255, 255, 255, 0.06), inset 0 0 0 14px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 40px var(--shadow-color),
+    inset 0 0 0 6px rgba(255, 255, 255, 0.06),
+    inset 0 0 0 14px rgba(0, 0, 0, 0.5);
 }
 
 /* Spin disc when playing */
@@ -215,14 +237,19 @@ header h2 {
   align-items: center;
   justify-content: center;
   background-color: var(--primary-color);
-  box-shadow: 0 8px 20px rgba(29, 185, 84, 0.35), inset 0 -4px 12px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 8px 20px rgba(29, 185, 84, 0.35),
+    inset 0 -4px 12px rgba(0, 0, 0, 0.35);
 }
 
 .progress {
   width: 100%;
   -webkit-appearance: none;
   height: 6px;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12));
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.12),
+    rgba(255, 255, 255, 0.12)
+  );
   outline: none;
   border-radius: 999px;
 }
@@ -252,7 +279,8 @@ header h2 {
   padding: 10px 16px;
   border-radius: 10px;
   border: 1px solid var(--border-color);
-  transition: transform 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+  transition: transform 0.15s ease, background-color 0.15s ease,
+    box-shadow 0.15s ease;
 }
 .song:hover {
   transform: translateY(-2px);
@@ -261,7 +289,11 @@ header h2 {
 }
 
 .song.active {
-  background: linear-gradient(180deg, rgba(29, 185, 84, 0.22), rgba(29, 185, 84, 0.1));
+  background: linear-gradient(
+    180deg,
+    rgba(29, 185, 84, 0.22),
+    rgba(29, 185, 84, 0.1)
+  );
   border-color: rgba(29, 185, 84, 0.4);
 }
 
