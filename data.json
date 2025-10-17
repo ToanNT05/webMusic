@@ -18,28 +18,28 @@
       "id": 3,
       "name": "Lonely",
       "singer": "Akon",
-          "path": "stuff/audio/lonely.mp3",
+      "path": "stuff/audio/lonely.mp3",
       "image": "stuff/img/lonely.jpg"
     },
     {
       "id": 4,
-      "name": "Đường",
+      "name": "Sugar",
       "singer": "Maroon 5",
-        "path": "stuff/audio/sugar.mp3",
+      "path": "stuff/audio/sugar.mp3",
       "image": "stuff/img/sugar.jpg"
     },
     {
       "id": 5,
       "name": "Someone You Loved",
       "singer": "Lewin Capaldi",
-         "path": "stuff/audio/sul.mp3",
+      "path": "stuff/audio/sul.mp3",
       "image": "stuff/img/sul.jpg"
     },
     {
       "id": 6,
       "name": "Love Yourself",
       "singer": "Justin Bieber",
-         "path": "stuff/audio/ly.mp3",
+      "path": "stuff/audio/ly.mp3",
       "image": "stuff/img/ly.jpg"
     },
     {
@@ -53,7 +53,7 @@
       "id": 8,
       "name": "Memories",
       "singer": "Maroon 5",
-         "path": "stuff/audio/mem.mp3",
+      "path": "stuff/audio/mem.mp3",
       "image": "stuff/img/mem.jpg"
     },
     {
